@@ -23,6 +23,8 @@ with open(csvpath, newline="") as csvfile:
         
 output = (
         f"Election Results\n"
+        f"---------------------------\n"
+        f"Total Votes:{totalvotes}\n"
         f"---------------------------\n")
 
 file_to_output = os.path.join("Poll Analysis")
