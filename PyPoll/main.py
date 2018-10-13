@@ -35,9 +35,9 @@ with open(file_to_output, "w") as txt_file:
         if winner < totalcounts:
             winner = totalcounts
             winnername = k
-        totalcounts='{0:2f}'.format(v/totalvotes*100)
-        txt_file.write(str(k) +":" + " "+ str(totalcounts) + "("+ str(v) +")"+"\n")
-        print(f"{k}: {totalcounts} ({v})")
+        totalcounts='{0:.3f}'.format(v/totalvotes*100)
+        txt_file.write(str(k) +":" + " "+ str(totalcounts) + "% ("+ str(v) +")"+"\n")
+        print(f"{k}: {totalcounts}% ({v})")
         #print ( (k) +": " + totalcounts + "("+v+")")
         output2 = ("---------------------------\n"
             f"Winner:{winnername}  \n"  
